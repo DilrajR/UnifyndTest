@@ -3,21 +3,13 @@
   "builds": [
     {
       "src": "server.js",
-<<<<<<< HEAD
       "use": "@vercel/node"
-=======
-      "use": "@now/node"
->>>>>>> 00fd94514e63d6a637842a56322873f17396c51b
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-<<<<<<< HEAD
       "dest": "server.js"
-=======
-      "dest": "/server.js"
->>>>>>> 00fd94514e63d6a637842a56322873f17396c51b
     }
   ]
 }
