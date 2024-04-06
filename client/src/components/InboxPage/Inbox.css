@@ -1,0 +1,59 @@
+.inboxpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f7f6;
+}
+
+.inboxpage .message-list {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.inboxpage .message-item {
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.inboxpage .message-item:last-child {
+  border-bottom: none;
+}
+
+.inboxpage .message-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.inboxpage .message-item p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.inboxpage .message-item p.Sent {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .inboxpage .message-item {
+    padding: 10px;
+  }
+
+  .inboxpage .message-item p {
+    margin: 3px 0;
+  }
+}

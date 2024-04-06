@@ -1,0 +1,135 @@
+:root {
+  --color-text: #333;
+  --color-bg: #f5f5f5;
+  --color-primary: #004c9b;
+  --color-secondary: #006adc;
+  --color-accent: #003366;
+  --color-teritary: #ffdc00;
+}
+
+div.main-wrap {
+  height: 100vh;
+  display: flex;
+  place-items: center;
+}
+
+.login-component main {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.login-component img {
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.login-component h1.sitename {
+  margin: 10px 0;
+  color: #333;
+  font-size: 3.2em;
+}
+
+.login-component .img-wrap {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-component form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.login-component input[type="text"],
+.login-component input[type="password"],
+.login-component input[type="email"] {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-component input[type="text"]:focus,
+.login-component input[type="password"]:focus,
+.login-component input[type="email"]:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.login-component button {
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  flex: 1;
+}
+
+.login-component .login-btn {
+  background-color: #004c9b;
+}
+
+.login-component .login-btn:hover {
+  background-color: #006adc;
+}
+
+.login-component .register-btn {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  background-color: #ffdc00;
+  color: #333;
+}
+
+.login-component .register-btn:hover {
+  background-color: #e1c300;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  body,
+  html {
+    flex-direction: column;
+    height: auto;
+    background-color: white;
+  }
+
+  div.main-wrap {
+    width: 20rem;
+    height: 40rem;
+  }
+
+  .login-component div {
+    width: 20rem;
+    height: 40rem;
+  }
+
+  .login-component main {
+    box-shadow: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .login-component img {
+    max-width: 100%;
+    height: auto;
+    padding: auto;
+  }
+}
